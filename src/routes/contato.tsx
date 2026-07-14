@@ -42,14 +42,19 @@ function Contato() {
   const [loading, setLoading] = useState(false);
 
   const validateField = <K extends keyof Form>(k: K, v: Form[K]) => {
-    const partial = schema.pick({ [k]: true } as Record<K, true>);
-    const res = partial.safeParse({ [k]: v });
+    const res = schema.safeParse({ ...form, [k]: v });
     if (res.success) {
       setState((s) => ({ ...s, [k]: (v as string).length ? "ok" : "idle" }));
       setErrors((e) => ({ ...e, [k]: undefined }));
-    } else {
+      return;
+    }
+    const issue = res.error.issues.find((i) => i.path[0] === k);
+    if (issue) {
       setState((s) => ({ ...s, [k]: "err" }));
-      setErrors((e) => ({ ...e, [k]: res.error.issues[0].message }));
+      setErrors((e) => ({ ...e, [k]: issue.message }));
+    } else {
+      setState((s) => ({ ...s, [k]: (v as string).length ? "ok" : "idle" }));
+      setErrors((e) => ({ ...e, [k]: undefined }));
     }
   };
 
