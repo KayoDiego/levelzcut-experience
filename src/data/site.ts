@@ -13,7 +13,7 @@ export const services = [
   },
   {
     id: "barba",
-    icon: Beard,
+    icon: Wind,
     name: "Barba Modelada",
     price: "R$ 70",
     duration: "40 min",
