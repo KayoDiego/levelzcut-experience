@@ -1,4 +1,4 @@
-import { Scissors, Bean as Beard, Sparkles, Eye, Droplet, Palette } from "lucide-react";
+import { Scissors, Wind, Sparkles, Eye, Droplet, Palette } from "lucide-react";
 
 export const services = [
   {
