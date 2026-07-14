@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/contato")({
   head: () => ({
     meta: [
-      { title: "Contato & Agendamento — LevelzCut Pinheiros" },
+      { title: "Contato & Agendamento — LevelzCut" },
       { name: "description", content: "Agende seu horário. Endereço, WhatsApp, horários e formulário direto com nosso time." },
     ],
   }),
@@ -123,7 +123,7 @@ function Contato() {
 
           <div className="mt-10 space-y-5">
             {[
-              { icon: MapPin, label: "Endereço", value: "R. dos Pinheiros, 500 — Pinheiros, São Paulo/SP" },
+              { icon: MapPin, label: "Endereço", value: "São Paulo/SP" },
               { icon: Phone, label: "Telefone", value: "(11) 99999-0000" },
               { icon: Mail, label: "E-mail", value: "contato@levelzcut.com.br" },
               { icon: Clock, label: "Horários", value: "Ter–Sex 10h–21h · Sáb 09h–20h · Dom–Seg fechado" },

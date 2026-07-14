@@ -81,18 +81,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "LevelzCut Pinheiros — Barbearia Premium by Fio Navalha" },
+      { title: "LevelzCut — Barbearia Premium by Fio Navalha" },
       {
         name: "description",
         content:
-          "Barbearia premium masculina em Pinheiros, São Paulo. Cortes, barba, ritual completo. Agendamento online fácil.",
+          "Barbearia premium masculina em São Paulo. Cortes, barba, ritual completo. Agendamento online fácil.",
       },
-      { name: "author", content: "LevelzCut Pinheiros" },
+      { name: "author", content: "LevelzCut" },
       { name: "theme-color", content: "#0D0D0D" },
-      { property: "og:title", content: "LevelzCut Pinheiros — Barbearia Premium" },
+      { property: "og:title", content: "LevelzCut — Barbearia Premium" },
       {
         property: "og:description",
-        content: "Corte, barba e ritual premium no coração de Pinheiros, SP.",
+        content: "Corte, barba e ritual premium em São Paulo, SP.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

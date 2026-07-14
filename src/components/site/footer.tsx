@@ -10,8 +10,7 @@ export function Footer() {
             LEVELZ<span className="text-gold">CUT</span>
           </div>
           <p className="mt-3 text-sm text-muted-foreground max-w-xs">
-            Pinheiros by Fio Navalha. Barbearia premium para o homem moderno que
-            se cuida.
+            By Fio Navalha. Barbearia premium para o homem moderno que se cuida.
           </p>
         </div>
         <div>
@@ -45,7 +44,7 @@ export function Footer() {
         <div>
           <h4 className="text-gold text-lg tracking-widest">CONTATO</h4>
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-            <li className="flex items-start gap-2"><MapPin className="size-4 text-gold mt-0.5" /> R. dos Pinheiros, 500 — Pinheiros, SP</li>
+            <li className="flex items-start gap-2"><MapPin className="size-4 text-gold mt-0.5" /> São Paulo, SP</li>
             <li className="flex items-center gap-2"><Phone className="size-4 text-gold" /> (11) 99999-0000</li>
           </ul>
           <div className="mt-4 flex gap-3">
@@ -62,7 +61,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-border/50 py-5 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} LevelzCut Pinheiros by Fio Navalha. Todos os direitos reservados.
+        © {new Date().getFullYear()} LevelzCut by Fio Navalha. Todos os direitos reservados.
       </div>
     </footer>
   );

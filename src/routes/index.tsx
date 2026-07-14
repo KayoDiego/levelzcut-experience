@@ -7,11 +7,11 @@ import { useReveal } from "@/hooks/use-reveal";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "LevelzCut Pinheiros — Barbearia Premium em Pinheiros, SP" },
+      { title: "LevelzCut — Barbearia Premium em São Paulo, SP" },
       {
         name: "description",
         content:
-          "Barbearia premium para o homem moderno. Corte, barba e ritual completo em Pinheiros, São Paulo. Agende online.",
+          "Barbearia premium para o homem moderno. Corte, barba e ritual completo em São Paulo. Agende online.",
       },
     ],
   }),
@@ -36,7 +36,7 @@ function Home() {
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1521490878406-4f7d1f8f5c1f?auto=format&fit=crop&w=2000&q=80"
-            alt="Barbearia LevelzCut em Pinheiros"
+            alt="Barbearia LevelzCut"
             className="size-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-jet/70 via-jet/70 to-jet" />
@@ -45,7 +45,7 @@ function Home() {
         <div className="container-app relative z-10">
           <div className="max-w-2xl animate-fade-up">
             <div className="flex items-center gap-3 text-gold uppercase tracking-[0.4em] text-xs mb-6">
-              <span className="h-px w-10 bg-gold" /> Pinheiros · São Paulo
+              <span className="h-px w-10 bg-gold" /> São Paulo
             </div>
             <h1 className="font-display text-6xl md:text-8xl leading-[0.9]">
               Onde o <span className="text-gold-gradient">homem moderno</span>

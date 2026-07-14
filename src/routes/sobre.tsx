@@ -7,8 +7,8 @@ import { useReveal } from "@/hooks/use-reveal";
 export const Route = createFileRoute("/sobre")({
   head: () => ({
     meta: [
-      { title: "Sobre — LevelzCut Pinheiros" },
-      { name: "description", content: "Conheça a história, os valores e os barbeiros da LevelzCut Pinheiros by Fio Navalha." },
+      { title: "Sobre — LevelzCut" },
+      { name: "description", content: "Conheça a história, os valores e os barbeiros da LevelzCut by Fio Navalha." },
     ],
   }),
   component: Sobre,
@@ -17,7 +17,7 @@ export const Route = createFileRoute("/sobre")({
 const timeline = [
   { year: "2014", title: "Fio Navalha nasce", desc: "Uma barbearia de bairro com a obsessão pelo bem feito." },
   { year: "2018", title: "Prêmio SP Barber", desc: "Reconhecida entre as 10 melhores barbearias de São Paulo." },
-  { year: "2021", title: "Novo endereço em Pinheiros", desc: "Casarão redesenhado, ambiente premium do zero." },
+  { year: "2021", title: "Novo endereço", desc: "Casarão redesenhado, ambiente premium do zero." },
   { year: "2024", title: "LevelzCut by Fio Navalha", desc: "Nova marca, mesmo padrão obsessivo de excelência." },
 ];
 
@@ -40,7 +40,7 @@ function Sobre() {
               Feito por barbeiros. <span className="text-gold-gradient">Para homens exigentes.</span>
             </h1>
             <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
-              A LevelzCut Pinheiros nasce da união entre o rigor técnico da Fio
+              A LevelzCut nasce da união entre o rigor técnico da Fio
               Navalha e o desejo de criar um espaço onde o homem moderno se
               sente em casa. Aqui, corte é ritual — e cada minuto foi pensado
               pra você sair melhor do que entrou.

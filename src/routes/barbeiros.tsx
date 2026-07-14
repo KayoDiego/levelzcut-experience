@@ -7,7 +7,7 @@ import { useReveal } from "@/hooks/use-reveal";
 export const Route = createFileRoute("/barbeiros")({
   head: () => ({
     meta: [
-      { title: "Barbeiros — LevelzCut Pinheiros" },
+      { title: "Barbeiros — LevelzCut" },
       { name: "description", content: "Conheça os barbeiros da LevelzCut. Rafa, Salles, Prado e Leo — cada um com sua assinatura." },
     ],
   }),

@@ -7,8 +7,8 @@ import { useReveal } from "@/hooks/use-reveal";
 export const Route = createFileRoute("/depoimentos")({
   head: () => ({
     meta: [
-      { title: "Depoimentos — LevelzCut Pinheiros" },
-      { name: "description", content: "O que os clientes falam da LevelzCut Pinheiros. Nota 4.9 no Google." },
+      { title: "Depoimentos — LevelzCut" },
+      { name: "description", content: "O que os clientes falam da LevelzCut. Nota 4.9 no Google." },
     ],
   }),
   component: Depoimentos,
