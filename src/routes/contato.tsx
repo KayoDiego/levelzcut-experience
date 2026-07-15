@@ -3,7 +3,7 @@ import { useState } from "react";
 import { z } from "zod";
 import { toast } from "sonner";
 import { MapPin, Phone, Mail, Clock, MessageCircle, ArrowRight, Loader2 } from "lucide-react";
-import { services } from "@/data/site";
+import { services, units } from "@/data/site";
 import { useReveal } from "@/hooks/use-reveal";
 import { cn } from "@/lib/utils";
 
@@ -175,6 +175,15 @@ function Contato() {
             </Field>
           </div>
 
+          <Field label="Unidade preferida" id="unit" error={errors.unit}>
+            <select id="unit" required value={form.unit} onChange={(e) => setField("unit", e.target.value)} className={inputCls("unit")}>
+              <option value="">Selecione uma unidade</option>
+              {units.map((u) => (
+                <option key={u.id} value={u.name}>{u.name} — {u.neighborhood}</option>
+              ))}
+            </select>
+          </Field>
+
           <Field label="Serviço" id="service" error={errors.service}>
             <select id="service" required value={form.service} onChange={(e) => setField("service", e.target.value)} className={inputCls("service")}>
               <option value="">Selecione um serviço</option>
@@ -183,15 +192,6 @@ function Contato() {
               ))}
             </select>
           </Field>
-
-          <div className="grid gap-5 sm:grid-cols-2">
-            <Field label="Data" id="date" error={errors.date}>
-              <input id="date" type="date" required value={form.date} onChange={(e) => setField("date", e.target.value)} className={inputCls("date")} />
-            </Field>
-            <Field label="Horário" id="time" error={errors.time}>
-              <input id="time" type="time" required value={form.time} onChange={(e) => setField("time", e.target.value)} className={inputCls("time")} />
-            </Field>
-          </div>
 
           <Field label="Observações (opcional)" id="notes" error={errors.notes}>
             <textarea id="notes" rows={3} value={form.notes} onChange={(e) => setField("notes", e.target.value)} className={inputCls("notes")} placeholder="Barbeiro preferido, tipo de corte, etc." />
