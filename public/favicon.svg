@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="LevelzCut">
+  <rect width="48" height="48" fill="#0A0A0A"/>
+  <rect x="3" y="3" width="42" height="42" fill="none" stroke="#E53E3E" stroke-width="3"/>
+  <g fill="none" stroke="#D4AF37" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="17" cy="17" r="3.5"/>
+    <circle cx="17" cy="31" r="3.5"/>
+    <path d="M20 19.5 31 12"/>
+    <path d="M20 28.5 31 36"/>
+    <path d="M31 12 36 7"/>
+    <path d="M31 36 36 41"/>
+  </g>
+</svg>
