@@ -5,9 +5,9 @@ import { cn } from "@/lib/utils";
 
 const links = [
   { to: "/", label: "Home" },
-  { to: "/sobre", label: "Sobre" },
+  { to: "/sobre", label: "A Rede" },
+  { to: "/unidades", label: "Unidades" },
   { to: "/servicos", label: "Serviços" },
-  { to: "/barbeiros", label: "Barbeiros" },
   { to: "/galeria", label: "Galeria" },
   { to: "/depoimentos", label: "Depoimentos" },
   { to: "/contato", label: "Contato" },
@@ -37,11 +37,11 @@ export function Navbar() {
         <Link to="/" className="flex items-center gap-2 group">
           <Scissors className="size-5 text-gold transition-transform group-hover:rotate-12" />
           <span className="font-display text-2xl md:text-3xl tracking-widest">
-            LEVELZ<span className="text-gold">CUT</span>
+            LEVELZ<span className="text-gold">CUTZ</span>
           </span>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-7">
           {links.map((l) => (
             <Link
               key={l.to}
@@ -56,10 +56,10 @@ export function Navbar() {
         </nav>
 
         <Link
-          to="/contato"
+          to="/unidades"
           className="hidden lg:inline-flex items-center rounded-full bg-gold px-5 py-2 text-sm font-semibold uppercase tracking-widest text-jet hover:bg-gold-soft transition-colors"
         >
-          Agendar
+          Encontrar Unidade
         </Link>
 
         <button
@@ -87,11 +87,11 @@ export function Navbar() {
               </Link>
             ))}
             <Link
-              to="/contato"
+              to="/unidades"
               onClick={() => setOpen(false)}
               className="mt-2 inline-flex justify-center rounded-full bg-gold px-5 py-3 text-sm font-semibold uppercase tracking-widest text-jet"
             >
-              Agendar agora
+              Encontrar unidade
             </Link>
           </nav>
         </div>

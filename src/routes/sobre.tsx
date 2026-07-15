@@ -1,31 +1,35 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Award, Heart, Users, Zap, Instagram, Star, ArrowRight } from "lucide-react";
-import { barbers } from "@/data/site";
+import { Award, Heart, Users, Zap, ArrowRight, MapPin } from "lucide-react";
+import { stats, units } from "@/data/site";
 import { SectionHeading } from "@/components/site/section-heading";
 import { useReveal } from "@/hooks/use-reveal";
 
 export const Route = createFileRoute("/sobre")({
   head: () => ({
     meta: [
-      { title: "Sobre — LevelzCut" },
-      { name: "description", content: "Conheça a história, os valores e os barbeiros da LevelzCut by Fio Navalha." },
+      { title: "A Rede — Levelz Cutz" },
+      { name: "description", content: "A história da Levelz Cutz: fundada em 2005 como Fio Navalha, hoje uma rede premium com +10 unidades em SP e uma internacional em Orlando." },
+      { property: "og:title", content: "A história da rede Levelz Cutz" },
+      { property: "og:description", content: "De 2005 a hoje: da Fio Navalha para a maior rede premium de barbearias de SP." },
     ],
   }),
   component: Sobre,
 });
 
 const timeline = [
-  { year: "2014", title: "Fio Navalha nasce", desc: "Uma barbearia de bairro com a obsessão pelo bem feito." },
-  { year: "2018", title: "Prêmio SP Barber", desc: "Reconhecida entre as 10 melhores barbearias de São Paulo." },
-  { year: "2021", title: "Novo endereço", desc: "Casarão redesenhado, ambiente premium do zero." },
-  { year: "2024", title: "LevelzCut by Fio Navalha", desc: "Nova marca, mesmo padrão obsessivo de excelência." },
+  { year: "2005", title: "Nasce a Fio Navalha", desc: "Uma barbearia de bairro em São Paulo, obcecada pelo bem feito." },
+  { year: "2010", title: "Primeira expansão", desc: "Segunda e terceira unidades abertas em bairros nobres da capital." },
+  { year: "2015", title: "Marca reconhecida", desc: "Prêmios do setor e presença consolidada em São Paulo." },
+  { year: "2020", title: "Nova identidade: Levelz Cutz", desc: "Rebranding para refletir a nova geração da rede." },
+  { year: "2023", title: "+10 unidades em SP", desc: "Rede alcança dois dígitos de unidades na capital paulista." },
+  { year: "2025", title: "Unidade internacional", desc: "Levelz Cutz Orlando: a marca cruza fronteiras." },
 ];
 
 const values = [
-  { icon: Award, title: "Excelência", desc: "Cada corte tratado como obra única." },
-  { icon: Heart, title: "Cuidado", desc: "O cliente é o centro de tudo, sem pressa." },
-  { icon: Users, title: "Comunidade", desc: "Um clube de homens que se cuidam." },
-  { icon: Zap, title: "Precisão", desc: "Técnica cirúrgica em cada detalhe." },
+  { icon: Award, title: "Padrão", desc: "Mesma qualidade em toda unidade da rede." },
+  { icon: Heart, title: "Cuidado", desc: "Cliente no centro — em cada bairro, cada cidade." },
+  { icon: Users, title: "Escala", desc: "+50 profissionais treinados no jeito Levelz." },
+  { icon: Zap, title: "Precisão", desc: "Técnica cirúrgica replicada em cada corte." },
 ];
 
 function Sobre() {
@@ -37,19 +41,27 @@ function Sobre() {
           <div className="reveal">
             <div className="text-gold uppercase tracking-[0.4em] text-xs mb-4">Nossa história</div>
             <h1 className="font-display text-5xl md:text-7xl leading-none">
-              Feito por barbeiros. <span className="text-gold-gradient">Para homens exigentes.</span>
+              De uma barbearia de bairro para a <span className="text-gold-gradient">maior rede premium</span> de SP.
             </h1>
             <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
-              A LevelzCut nasce da união entre o rigor técnico da Fio
-              Navalha e o desejo de criar um espaço onde o homem moderno se
-              sente em casa. Aqui, corte é ritual — e cada minuto foi pensado
-              pra você sair melhor do que entrou.
+              A Levelz Cutz nasceu em 2005 como <strong className="text-cream">Fio Navalha</strong>,
+              uma barbearia de bairro obcecada por qualidade. Duas décadas depois, somos uma rede com
+              mais de {units.filter(u => u.country === "BR").length} unidades em São Paulo e uma
+              unidade internacional em Orlando — sempre com o mesmo padrão obsessivo de excelência.
             </p>
+            <div className="mt-8 grid grid-cols-2 gap-4">
+              {stats.map((s) => (
+                <div key={s.label} className="rounded-xl border border-border bg-graphite p-5">
+                  <div className="font-display text-4xl text-gold">{s.value}</div>
+                  <div className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">{s.label}</div>
+                </div>
+              ))}
+            </div>
           </div>
           <div className="reveal rounded-2xl overflow-hidden border border-border">
             <img
               src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=1200&q=80"
-              alt="Interior da barbearia LevelzCut"
+              alt="Unidades da rede Levelz Cutz"
               className="w-full h-full object-cover aspect-[4/3]"
             />
           </div>
@@ -59,11 +71,11 @@ function Sobre() {
       {/* Timeline */}
       <section className="py-24 bg-graphite">
         <div className="container-app">
-          <SectionHeading eyebrow="Linha do tempo" title={<>10 anos de <span className="text-gold-gradient">navalha afiada</span></>} />
+          <SectionHeading eyebrow="Linha do tempo" title={<>20 anos de <span className="text-gold-gradient">evolução</span></>} />
           <div className="mt-16 relative">
             <div className="absolute left-4 md:left-1/2 -translate-x-px top-0 bottom-0 w-px bg-border" />
             {timeline.map((t, i) => (
-              <div key={t.year} className={`reveal relative pl-14 md:pl-0 md:grid md:grid-cols-2 md:gap-12 mb-10 items-center ${i % 2 ? "md:flex-row-reverse" : ""}`}>
+              <div key={t.year} className={`reveal relative pl-14 md:pl-0 md:grid md:grid-cols-2 md:gap-12 mb-10 items-center`}>
                 <div className={`absolute left-0 md:left-1/2 -translate-x-1/2 grid size-8 place-items-center rounded-full bg-gold text-jet font-display text-sm z-10`}>
                   {i + 1}
                 </div>
@@ -93,36 +105,9 @@ function Sobre() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Barbers */}
-      <section className="py-24 bg-graphite">
-        <div className="container-app">
-          <SectionHeading eyebrow="O time" title={<>Barbeiros com <span className="text-gold-gradient">assinatura</span></>} />
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {barbers.map((b) => (
-              <article key={b.id} className="reveal card-lift group rounded-xl overflow-hidden border border-border bg-jet">
-                <div className="aspect-[3/4] overflow-hidden">
-                  <img src={b.image} alt={b.name} className="size-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                </div>
-                <div className="p-5">
-                  <div className="flex items-center justify-between">
-                    <h3 className="font-display text-2xl">{b.name}</h3>
-                    <span className="flex items-center gap-1 text-gold text-sm"><Star className="size-4 fill-current" />{b.rating}</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground mt-1">"{b.nickname}" · {b.years} anos</p>
-                  <p className="text-sm text-cream/80 mt-2">{b.specialty}</p>
-                  <div className="mt-4 flex items-center gap-2 text-xs text-muted-foreground">
-                    <Instagram className="size-4 text-gold" /> {b.instagram}
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
           <div className="mt-14 text-center reveal">
-            <Link to="/contato" className="inline-flex items-center gap-2 rounded-full bg-gold px-8 py-4 text-sm font-semibold uppercase tracking-widest text-jet hover:bg-gold-soft">
-              Agendar minha visita <ArrowRight className="size-4" />
+            <Link to="/unidades" className="inline-flex items-center gap-2 rounded-full bg-gold px-8 py-4 text-sm font-semibold uppercase tracking-widest text-jet hover:bg-gold-soft">
+              <MapPin className="size-4" /> Ver unidades da rede <ArrowRight className="size-4" />
             </Link>
           </div>
         </div>

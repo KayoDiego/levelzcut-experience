@@ -21,9 +21,8 @@ const schema = z.object({
   name: z.string().trim().min(2, "Informe seu nome"),
   email: z.string().trim().email("E-mail inválido"),
   phone: z.string().trim().min(8, "Telefone inválido"),
+  unit: z.string().min(1, "Escolha uma unidade"),
   service: z.string().min(1, "Escolha um serviço"),
-  date: z.string().min(1, "Escolha uma data"),
-  time: z.string().min(1, "Escolha um horário"),
   notes: z.string().max(500).optional(),
 });
 
@@ -32,7 +31,7 @@ type Status = "idle" | "ok" | "err";
 type FieldState = Partial<Record<keyof Form, Status>>;
 type FieldErr = Partial<Record<keyof Form, string>>;
 
-const initial: Form = { name: "", email: "", phone: "", service: "", date: "", time: "", notes: "" };
+const initial: Form = { name: "", email: "", phone: "", unit: "", service: "", notes: "" };
 
 function Contato() {
   useReveal();
