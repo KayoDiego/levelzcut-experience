@@ -81,18 +81,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "LevelzCut — Barbearia Premium by Fio Navalha" },
+      { title: "Levelz Cutz — Rede Premium de Barbearias em SP e Orlando" },
       {
         name: "description",
         content:
-          "Barbearia premium masculina em São Paulo. Cortes, barba, ritual completo. Agendamento online fácil.",
+          "Rede premium de barbearias masculinas com +10 unidades em São Paulo e uma unidade internacional em Orlando. Encontre a Levelz Cutz mais próxima.",
       },
-      { name: "author", content: "LevelzCut" },
+      { name: "author", content: "Levelz Cutz" },
       { name: "theme-color", content: "#0D0D0D" },
-      { property: "og:title", content: "LevelzCut — Barbearia Premium" },
+      { property: "og:title", content: "Levelz Cutz — Rede Premium de Barbearias" },
       {
         property: "og:description",
-        content: "Corte, barba e ritual premium em São Paulo, SP.",
+        content: "+10 unidades em SP e uma internacional em Orlando. Encontre a mais próxima.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

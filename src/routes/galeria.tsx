@@ -9,8 +9,8 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/galeria")({
   head: () => ({
     meta: [
-      { title: "Galeria — LevelzCut" },
-      { name: "description", content: "Cortes, barbas, ambiente e detalhes da LevelzCut." },
+      { title: "Galeria — Levelz Cutz" },
+      { name: "description", content: "Cortes, barbas, ambientes e detalhes das unidades da rede Levelz Cutz." },
     ],
   }),
   component: Galeria,
