@@ -112,20 +112,20 @@ function Contato() {
       <div className="container-app grid gap-12 lg:grid-cols-2">
         {/* Left */}
         <div className="reveal">
-          <div className="text-gold uppercase tracking-[0.4em] text-xs mb-4">Contato</div>
+          <div className="text-gold uppercase tracking-[0.4em] text-xs mb-4">Contato da rede</div>
           <h1 className="font-display text-5xl md:text-6xl leading-none">
-            Bora agendar seu <span className="text-gold-gradient">horário?</span>
+            Fale com a <span className="text-gold-gradient">rede Levelz Cutz</span>
           </h1>
           <p className="mt-4 text-muted-foreground">
-            Chame no WhatsApp ou preencha o formulário. Retorno em minutos no horário comercial.
+            Escolha a unidade mais conveniente ou fale com a central. Preferindo WhatsApp direto com uma unidade, veja <Link to="/unidades" className="text-gold hover:underline">todas as unidades</Link>.
           </p>
 
           <div className="mt-10 space-y-5">
             {[
-              { icon: MapPin, label: "Endereço", value: "São Paulo/SP" },
-              { icon: Phone, label: "Telefone", value: "(11) 99999-0000" },
-              { icon: Mail, label: "E-mail", value: "contato@levelzcut.com.br" },
-              { icon: Clock, label: "Horários", value: "Ter–Sex 10h–21h · Sáb 09h–20h · Dom–Seg fechado" },
+              { icon: MapPin, label: "Presença", value: `${units.filter(u => u.country === "BR").length} unidades em SP · 1 em Orlando, FL` },
+              { icon: Phone, label: "Central", value: "(11) 99999-0000" },
+              { icon: Mail, label: "E-mail", value: "contato@levelzcutz.com.br" },
+              { icon: Clock, label: "Horários", value: "Seg–Sáb 09h–21h · Dom 10h–18h" },
             ].map((it) => (
               <div key={it.label} className="flex items-start gap-4 rounded-xl border border-border bg-graphite p-5">
                 <div className="grid size-11 place-items-center rounded-lg bg-gold/10 text-gold shrink-0">
@@ -146,13 +146,13 @@ function Contato() {
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-6 py-3 text-sm font-semibold uppercase tracking-widest text-white hover:opacity-90 transition"
             >
-              <MessageCircle className="size-4" /> WhatsApp direto
+              <MessageCircle className="size-4" /> WhatsApp central
             </a>
             <Link
-              to="/servicos"
+              to="/unidades"
               className="inline-flex items-center gap-2 rounded-full border border-gold/60 px-6 py-3 text-sm font-semibold uppercase tracking-widest text-cream hover:bg-gold/10 transition"
             >
-              Ver serviços <ArrowRight className="size-4" />
+              Ver unidades <ArrowRight className="size-4" />
             </Link>
           </div>
         </div>
