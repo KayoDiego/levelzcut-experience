@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react";
 export function WhatsappFloat() {
   const phone = "5511999990000";
   const msg = encodeURIComponent(
-    "Olá! Vim pelo site da LevelzCut e gostaria de agendar um horário.",
+    "Olá! Vim pelo site da Levelz Cutz e gostaria de saber mais sobre uma unidade.",
   );
   return (
     <a
