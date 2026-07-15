@@ -9,9 +9,9 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/unidades")({
   head: () => ({
     meta: [
-      { title: "Unidades — Levelz Cutz | Rede de Barbearias Premium" },
-      { name: "description", content: "Mais de 10 unidades em São Paulo e uma unidade internacional em Orlando. Encontre a Levelz Cutz mais próxima de você." },
-      { property: "og:title", content: "Unidades Levelz Cutz — SP e Orlando" },
+      { title: "Unidades — Levelz Cut | Rede de Barbearias Premium" },
+      { name: "description", content: "Mais de 10 unidades em São Paulo e uma unidade internacional em Orlando. Encontre a Levelz Cut mais próxima de você." },
+      { property: "og:title", content: "Unidades Levelz Cut — SP e Orlando" },
       { property: "og:description", content: "Encontre a unidade mais próxima de você. Rede premium de barbearias." },
     ],
   }),
@@ -74,7 +74,7 @@ function Unidades() {
           <SectionHeading
             eyebrow={`${units.length} unidades · SP + Orlando`}
             title={<>Encontre a <span className="text-gold-gradient">unidade mais próxima</span></>}
-            description="Mais de 10 unidades em São Paulo e uma unidade internacional. Todas com o mesmo padrão Levelz Cutz."
+            description="Mais de 10 unidades em São Paulo e uma unidade internacional. Todas com o mesmo padrão Levelz Cut."
           />
 
           {/* Search + Filter */}

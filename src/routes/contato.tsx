@@ -10,8 +10,8 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/contato")({
   head: () => ({
     meta: [
-      { title: "Contato — Levelz Cutz" },
-      { name: "description", content: "Fale com a rede Levelz Cutz. Central de contato e WhatsApp direto com cada unidade." },
+      { title: "Contato — Levelz Cut" },
+      { name: "description", content: "Fale com a rede Levelz Cut. Central de contato e WhatsApp direto com cada unidade." },
     ],
   }),
   component: Contato,
@@ -114,7 +114,7 @@ function Contato() {
         <div className="reveal">
           <div className="text-gold uppercase tracking-[0.4em] text-xs mb-4">Contato da rede</div>
           <h1 className="font-display text-5xl md:text-6xl leading-none">
-            Fale com a <span className="text-gold-gradient">rede Levelz Cutz</span>
+            Fale com a <span className="text-gold-gradient">rede Levelz Cut</span>
           </h1>
           <p className="mt-4 text-muted-foreground">
             Escolha a unidade mais conveniente ou fale com a central. Preferindo WhatsApp direto com uma unidade, veja <Link to="/unidades" className="text-gold hover:underline">todas as unidades</Link>.
@@ -124,7 +124,7 @@ function Contato() {
             {[
               { icon: MapPin, label: "Presença", value: `${units.filter(u => u.country === "BR").length} unidades em SP · 1 em Orlando, FL` },
               { icon: Phone, label: "Central", value: "(11) 99999-0000" },
-              { icon: Mail, label: "E-mail", value: "contato@levelzcutz.com.br" },
+              { icon: Mail, label: "E-mail", value: "contato@levelzcut.com.br" },
               { icon: Clock, label: "Horários", value: "Seg–Sáb 09h–21h · Dom 10h–18h" },
             ].map((it) => (
               <div key={it.label} className="flex items-start gap-4 rounded-xl border border-border bg-graphite p-5">

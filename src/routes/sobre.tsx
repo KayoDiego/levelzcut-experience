@@ -7,9 +7,9 @@ import { useReveal } from "@/hooks/use-reveal";
 export const Route = createFileRoute("/sobre")({
   head: () => ({
     meta: [
-      { title: "A Rede — Levelz Cutz" },
-      { name: "description", content: "A história da Levelz Cutz: fundada em 2005 como Fio Navalha, hoje uma rede premium com +10 unidades em SP e uma internacional em Orlando." },
-      { property: "og:title", content: "A história da rede Levelz Cutz" },
+      { title: "A Rede — Levelz Cut" },
+      { name: "description", content: "A história da Levelz Cut: fundada em 2005 como Fio Navalha, hoje uma rede premium com +10 unidades em SP e uma internacional em Orlando." },
+      { property: "og:title", content: "A história da rede Levelz Cut" },
       { property: "og:description", content: "De 2005 a hoje: da Fio Navalha para a maior rede premium de barbearias de SP." },
     ],
   }),
@@ -20,9 +20,9 @@ const timeline = [
   { year: "2005", title: "Nasce a Fio Navalha", desc: "Uma barbearia de bairro em São Paulo, obcecada pelo bem feito." },
   { year: "2010", title: "Primeira expansão", desc: "Segunda e terceira unidades abertas em bairros nobres da capital." },
   { year: "2015", title: "Marca reconhecida", desc: "Prêmios do setor e presença consolidada em São Paulo." },
-  { year: "2020", title: "Nova identidade: Levelz Cutz", desc: "Rebranding para refletir a nova geração da rede." },
+  { year: "2020", title: "Nova identidade: Levelz Cut", desc: "Rebranding para refletir a nova geração da rede." },
   { year: "2023", title: "+10 unidades em SP", desc: "Rede alcança dois dígitos de unidades na capital paulista." },
-  { year: "2025", title: "Unidade internacional", desc: "Levelz Cutz Orlando: a marca cruza fronteiras." },
+  { year: "2025", title: "Unidade internacional", desc: "Levelz Cut Orlando: a marca cruza fronteiras." },
 ];
 
 const values = [
@@ -44,7 +44,7 @@ function Sobre() {
               De uma barbearia de bairro para a <span className="text-gold-gradient">maior rede premium</span> de SP.
             </h1>
             <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
-              A Levelz Cutz nasceu em 2005 como <strong className="text-cream">Fio Navalha</strong>,
+              A Levelz Cut nasceu em 2005 como <strong className="text-cream">Fio Navalha</strong>,
               uma barbearia de bairro obcecada por qualidade. Duas décadas depois, somos uma rede com
               mais de {units.filter(u => u.country === "BR").length} unidades em São Paulo e uma
               unidade internacional em Orlando — sempre com o mesmo padrão obsessivo de excelência.
@@ -61,7 +61,7 @@ function Sobre() {
           <div className="reveal rounded-2xl overflow-hidden border border-border">
             <img
               src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=1200&q=80"
-              alt="Unidades da rede Levelz Cutz"
+              alt="Unidades da rede Levelz Cut"
               className="w-full h-full object-cover aspect-[4/3]"
             />
           </div>

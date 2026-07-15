@@ -1,15 +1,15 @@
 import { Scissors, Zap, Wind, Sparkles, Layers } from "lucide-react";
 
 export const brand = {
-  name: "Levelz Cutz",
+  name: "Levelz Cut",
   tagline: "Rede premium de barbearias masculinas",
   foundedYear: 2005,
   unitsCount: 11,
   professionals: 50,
   cities: ["São Paulo", "Orlando"],
   phone: "(11) 99999-0000",
-  email: "contato@levelzcutz.com.br",
-  instagram: "@levelzcutz",
+  email: "contato@levelzcut.com.br",
+  instagram: "@levelzcut",
 };
 
 export const stats = [
@@ -100,7 +100,7 @@ export type Unit = {
 export const units: Unit[] = [
   {
     id: "pinheiros",
-    name: "Levelz Cutz Pinheiros",
+    name: "Levelz Cut Pinheiros",
     neighborhood: "Pinheiros",
     city: "São Paulo",
     state: "SP",
@@ -114,7 +114,7 @@ export const units: Unit[] = [
   },
   {
     id: "vila-madalena",
-    name: "Levelz Cutz Vila Madalena",
+    name: "Levelz Cut Vila Madalena",
     neighborhood: "Vila Madalena",
     city: "São Paulo",
     state: "SP",
@@ -128,7 +128,7 @@ export const units: Unit[] = [
   },
   {
     id: "itaim",
-    name: "Levelz Cutz Itaim Bibi",
+    name: "Levelz Cut Itaim Bibi",
     neighborhood: "Itaim Bibi",
     city: "São Paulo",
     state: "SP",
@@ -142,7 +142,7 @@ export const units: Unit[] = [
   },
   {
     id: "moema",
-    name: "Levelz Cutz Moema",
+    name: "Levelz Cut Moema",
     neighborhood: "Moema",
     city: "São Paulo",
     state: "SP",
@@ -156,7 +156,7 @@ export const units: Unit[] = [
   },
   {
     id: "jardins",
-    name: "Levelz Cutz Jardins",
+    name: "Levelz Cut Jardins",
     neighborhood: "Jardins",
     city: "São Paulo",
     state: "SP",
@@ -170,7 +170,7 @@ export const units: Unit[] = [
   },
   {
     id: "vila-mariana",
-    name: "Levelz Cutz Vila Mariana",
+    name: "Levelz Cut Vila Mariana",
     neighborhood: "Vila Mariana",
     city: "São Paulo",
     state: "SP",
@@ -184,7 +184,7 @@ export const units: Unit[] = [
   },
   {
     id: "tatuape",
-    name: "Levelz Cutz Tatuapé",
+    name: "Levelz Cut Tatuapé",
     neighborhood: "Tatuapé",
     city: "São Paulo",
     state: "SP",
@@ -198,7 +198,7 @@ export const units: Unit[] = [
   },
   {
     id: "santana",
-    name: "Levelz Cutz Santana",
+    name: "Levelz Cut Santana",
     neighborhood: "Santana",
     city: "São Paulo",
     state: "SP",
@@ -212,7 +212,7 @@ export const units: Unit[] = [
   },
   {
     id: "morumbi",
-    name: "Levelz Cutz Morumbi",
+    name: "Levelz Cut Morumbi",
     neighborhood: "Morumbi",
     city: "São Paulo",
     state: "SP",
@@ -226,7 +226,7 @@ export const units: Unit[] = [
   },
   {
     id: "brooklin",
-    name: "Levelz Cutz Brooklin",
+    name: "Levelz Cut Brooklin",
     neighborhood: "Brooklin",
     city: "São Paulo",
     state: "SP",
@@ -240,7 +240,7 @@ export const units: Unit[] = [
   },
   {
     id: "santo-amaro",
-    name: "Levelz Cutz Santo Amaro",
+    name: "Levelz Cut Santo Amaro",
     neighborhood: "Santo Amaro",
     city: "São Paulo",
     state: "SP",
@@ -254,7 +254,7 @@ export const units: Unit[] = [
   },
   {
     id: "orlando",
-    name: "Levelz Cutz Orlando",
+    name: "Levelz Cut Orlando",
     neighborhood: "International Drive",
     city: "Orlando",
     state: "FL",
@@ -287,7 +287,7 @@ export const testimonials = [
   {
     name: "Carlos Mendonça",
     role: "Cliente Pinheiros",
-    text: "Frequento a unidade de Pinheiros há anos. Independente do barbeiro, o padrão é sempre alto. Consistência é o que faz a Levelz Cutz gigante.",
+    text: "Frequento a unidade de Pinheiros há anos. Independente do barbeiro, o padrão é sempre alto. Consistência é o que faz a Levelz Cut gigante.",
     photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
   },
   {
@@ -311,13 +311,13 @@ export const testimonials = [
   {
     name: "Marcelo Vieira",
     role: "Cliente Orlando",
-    text: "Estava em Orlando a trabalho e achei uma Levelz Cutz lá. Mesma vibe, mesma qualidade. Rede sério de verdade.",
+    text: "Estava em Orlando a trabalho e achei uma Levelz Cut lá. Mesma vibe, mesma qualidade. Rede sério de verdade.",
     photo: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=400&q=80",
   },
   {
     name: "Gustavo Ramos",
     role: "Cliente Brooklin",
-    text: "Já passaram mais de 10 anos que eu me corto na rede. Vi a evolução de Fio Navalha para Levelz Cutz e o padrão só subiu.",
+    text: "Já passaram mais de 10 anos que eu me corto na rede. Vi a evolução de Fio Navalha para Levelz Cut e o padrão só subiu.",
     photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80",
   },
 ] as const;

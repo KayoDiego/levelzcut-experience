@@ -7,9 +7,9 @@ import { useReveal } from "@/hooks/use-reveal";
 export const Route = createFileRoute("/servicos")({
   head: () => ({
     meta: [
-      { title: "Serviços — Levelz Cutz" },
+      { title: "Serviços — Levelz Cut" },
       { name: "description", content: "Serviços padronizados em toda a rede: Corte Tradicional, Corte Máquina, Barba, Barba com Esfoliação e Combos. Preço transparente." },
-      { property: "og:title", content: "Serviços Levelz Cutz — padronizados em toda a rede" },
+      { property: "og:title", content: "Serviços Levelz Cut — padronizados em toda a rede" },
     ],
   }),
   component: Servicos,

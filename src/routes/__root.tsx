@@ -81,15 +81,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Levelz Cutz — Rede Premium de Barbearias em SP e Orlando" },
+      { title: "Levelz Cut — Rede Premium de Barbearias em SP e Orlando" },
       {
         name: "description",
         content:
-          "Rede premium de barbearias masculinas com +10 unidades em São Paulo e uma unidade internacional em Orlando. Encontre a Levelz Cutz mais próxima.",
+          "Rede premium de barbearias masculinas com +10 unidades em São Paulo e uma unidade internacional em Orlando. Encontre a Levelz Cut mais próxima.",
       },
-      { name: "author", content: "Levelz Cutz" },
+      { name: "author", content: "Levelz Cut" },
       { name: "theme-color", content: "#0D0D0D" },
-      { property: "og:title", content: "Levelz Cutz — Rede Premium de Barbearias" },
+      { property: "og:title", content: "Levelz Cut — Rede Premium de Barbearias" },
       {
         property: "og:description",
         content: "+10 unidades em SP e uma internacional em Orlando. Encontre a mais próxima.",
@@ -99,7 +99,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      // { rel: "icon", href: "/favicon.ico", type: "image/x-icon" }, // FAVICON COMENTADO TEMPORARIAMENTE
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {

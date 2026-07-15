@@ -7,13 +7,13 @@ import { useReveal } from "@/hooks/use-reveal";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Levelz Cutz — Rede de Barbearias Premium em São Paulo" },
+      { title: "Levelz Cut — Rede de Barbearias Premium em São Paulo" },
       {
         name: "description",
         content:
           "Uma das maiores redes de barbearias premium de São Paulo. +10 unidades e uma unidade internacional em Orlando. Encontre a unidade mais próxima de você.",
       },
-      { property: "og:title", content: "Levelz Cutz — Rede Premium de Barbearias" },
+      { property: "og:title", content: "Levelz Cut — Rede Premium de Barbearias" },
       { property: "og:description", content: "+10 unidades em São Paulo e Orlando. Encontre a unidade mais próxima." },
     ],
   }),
@@ -41,7 +41,7 @@ function Home() {
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1521490878406-4f7d1f8f5c1f?auto=format&fit=crop&w=2000&q=80"
-            alt="Rede de barbearias Levelz Cutz"
+            alt="Rede de barbearias Levelz Cut"
             className="size-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-jet/70 via-jet/70 to-jet" />
@@ -58,7 +58,7 @@ function Home() {
             </h1>
             <p className="mt-6 text-lg text-muted-foreground max-w-xl">
               Mais de 10 unidades espalhadas por São Paulo e uma unidade internacional em Orlando.
-              Encontre a Levelz Cutz mais próxima de você.
+              Encontre a Levelz Cut mais próxima de você.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
@@ -172,7 +172,7 @@ function Home() {
       <section className="py-24 bg-jet">
         <div className="container-app">
           <SectionHeading
-            eyebrow="Por que a Levelz Cutz"
+            eyebrow="Por que a Levelz Cut"
             title={<>Escala com <span className="text-gold-gradient">padrão obsessivo</span></>}
           />
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -226,7 +226,7 @@ function Home() {
         <div className="container-app relative text-center reveal">
           <h2 className="font-display text-5xl md:text-7xl">Achou sua unidade?</h2>
           <p className="mt-4 text-muted-foreground text-lg max-w-xl mx-auto">
-            Escolha a unidade mais conveniente e venha conhecer a experiência Levelz Cutz.
+            Escolha a unidade mais conveniente e venha conhecer a experiência Levelz Cut.
           </p>
           <Link
             to="/unidades"

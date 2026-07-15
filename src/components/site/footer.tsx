@@ -91,7 +91,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-border/50 py-5 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Levelz Cutz — Rede de barbearias premium. Desde 2005.
+        © {new Date().getFullYear()} Levelz Cut — Rede de barbearias premium. Desde 2005.
       </div>
     </footer>
   );
