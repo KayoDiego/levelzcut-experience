@@ -10,8 +10,8 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/contato")({
   head: () => ({
     meta: [
-      { title: "Contato & Agendamento — LevelzCut" },
-      { name: "description", content: "Agende seu horário. Endereço, WhatsApp, horários e formulário direto com nosso time." },
+      { title: "Contato — Levelz Cutz" },
+      { name: "description", content: "Fale com a rede Levelz Cutz. Central de contato e WhatsApp direto com cada unidade." },
     ],
   }),
   component: Contato,
